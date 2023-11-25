@@ -17,10 +17,15 @@ import torch
 def make_correction():
     data_list = request.json  # Теперь ожидаем список JSON объектов
 
+    with open('demo/train_image_020_1.png', 'rb') as f:
+        orig = base64.b64encode(f.read()).decode('utf-8')
+
+    with open('demo/train_image_020.png', 'rb') as f:
+        mask = base64.b64encode(f.read()).decode('utf-8')
+
     resp = {
-        "orig": io.BytesIO('demo/train_image_020_1.png'),
-        "mask": io.BytesIO('demo/train_image_020.png'),
+        "orig": orig,
+        "mask": mask,
     }
-        
     return make_response(resp)
 
