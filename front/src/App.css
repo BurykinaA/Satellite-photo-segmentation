@@ -1,0 +1,88 @@
+#root {
+  /* max-width: 1280px; */
+  /* margin: 0 auto; */
+  width: 100%;
+  /* padding: 2rem; */
+  height: 100vh;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 100%; /* Фиксированная высота по вашему выбору */
+  /* padding-top: 80px; */
+  overflow: hidden;
+  display: flex;
+}
+
+.slider-image {
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  
+}
+
+.image-wrapper {
+  width: 100%; /* Фиксированная ширина изображения по вашему выбору */
+  height: 100%;
+  overflow: hidden;
+  /* position: absolute; */
+  pointer-events: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.divider {
+  /* position: absolute; */
+  top: 0;
+  bottom: 0;
+  width: 10px; /* Ширина ползунка по вашему выбору */
+  background-color: #333; /* Цвет ползунка */
+  cursor: ew-resize;
+  /* z-index: 1; */
+}
+
+
+
