@@ -11,5 +11,3 @@ Our solution is a model for the automatic identification of infrastructure objec
 Satellite photo segmentation for the international hackathon
 
 ![image](https://github.com/BurykinaA/Satellite-photo-segmentation/assets/92402616/bfb7bb5d-50c0-45fc-8e55-4759e17ccd0a)
-
-![image](https://github.com/BurykinaA/Satellite-photo-segmentation/assets/92402616/562d7847-83d5-4d54-bf05-c5cdc071daff)
